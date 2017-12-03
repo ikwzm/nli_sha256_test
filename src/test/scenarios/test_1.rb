@@ -103,7 +103,8 @@ File.open('test_1.snr','w') do |file|
   file.puts "  - SAY    : SHA256_Server TEST 1.1 Start."
   file.puts "---"
 
-  data   =  "abc".unpack("C*")
+  # data   =  "abc".unpack("C*")
+  data   =  "".unpack("C*")
   digest = Digest::SHA256.digest(data.pack("C*"))
   test_1(file, i, o, m, 0x12000000, data, digest)
 

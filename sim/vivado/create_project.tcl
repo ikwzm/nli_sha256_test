@@ -97,6 +97,7 @@ set sim_obj [get_filesets sim_1]
 set_property "top"     "TEST_BENCH" $sim_obj
 set_property "top_lib" "WORK"       $sim_obj
 set_property "generic" "SCENARIO_FILE=../../../../../src/test/scenarios/test_1.snr" $sim_obj
+set_property -name {xsim.elaborate.load_glbl} -value {false} -objects $sim_obj
 set_property -name {xsim.simulate.runtime} -value {100us} -objects $sim_obj
 
 update_compile_order -fileset sources_1

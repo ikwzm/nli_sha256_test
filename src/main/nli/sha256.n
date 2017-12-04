@@ -154,9 +154,9 @@ def M.sha256(addr, blocks #32) (#256) {
 }
 
 M.compile()
-M.writeHdl("/tmp/a.v")
-M.writeHdl("/tmp/a.html")
-M.writeHdl("/tmp/a.iroha")
+M.writeHdl("/tmp/sha256.v")
+M.writeHdl("/tmp/sha256.html")
+M.writeHdl("/tmp/sha256.iroha")
 
 print(M.sha256(0, 0))
 

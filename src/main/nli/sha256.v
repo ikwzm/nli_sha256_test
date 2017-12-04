@@ -6514,7 +6514,7 @@ module main(clk, rst, buf_ARADDR, buf_ARVALID, buf_ARREADY, buf_ARLEN, buf_ARSIZ
   SRAM_6_32 SRAM_6_32_inst_21(.clk(clk), .rst(rst), .addr_i(sram_addr_21), .rdata_o(sram_rdata_21), .wdata_i(sram_wdata_21), .write_en_i(sram_wdata_en_21));
 
 endmodule // main
-module a(clk, rst, buf_ARADDR, buf_ARVALID, buf_ARREADY, buf_ARLEN, buf_ARSIZE, buf_RVALID, buf_RDATA, buf_RREADY, buf_RLAST, buf_AWADDR, buf_AWVALID, buf_AWREADY, buf_AWLEN, buf_AWSIZE, buf_WVALID, buf_WREADY, buf_WDATA, buf_WLAST, buf_BVALID, buf_BREADY, buf_BRESP, sha256_req_valid, sha256_req_ready, sha256_req_busy, sha256_res_valid, sha256_res_ready, sha256_req_0, sha256_req_1, sha256_res_0);
+module sha256(clk, rst, buf_ARADDR, buf_ARVALID, buf_ARREADY, buf_ARLEN, buf_ARSIZE, buf_RVALID, buf_RDATA, buf_RREADY, buf_RLAST, buf_AWADDR, buf_AWVALID, buf_AWREADY, buf_AWLEN, buf_AWSIZE, buf_WVALID, buf_WREADY, buf_WDATA, buf_WLAST, buf_BVALID, buf_BREADY, buf_BRESP, sha256_req_valid, sha256_req_ready, sha256_req_busy, sha256_res_valid, sha256_res_ready, sha256_req_0, sha256_req_1, sha256_res_0);
   input clk;
   input rst;
   output [31:0] buf_ARADDR;
